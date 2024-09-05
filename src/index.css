@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-font: "Barlow", sans-serif; 
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: var(--primary-font);
+  background: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+} 
+
+.container{
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+#root{
+  max-width: 1600px;
+  margin: 0 auto;
+}
