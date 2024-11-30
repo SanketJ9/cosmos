@@ -2,7 +2,40 @@
     padding: 3em 0;
 }
 
+.neo-cont .heading{
+    margin-bottom: 0.5rem;
+}
+
 .neo-cont .heading p{
-    font-size: 2.6rem;
+    text-align: center;
+    font-size: 3.4rem;
     font-size: 400;
+}
+
+.neo-cont .description p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #c5c5c5;
+    font-size: 400;
+    max-width: 840px;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.neo-cont .neo-cards{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 1.5rem;
+}
+
+.neo-cont .neo-cards .neo-card{
+    padding: 1rem;
+    border: 2px solid #353535;
+    border-radius: 0.6rem;
+}
+
+.neo-cont .neo-cards .neo-card .name p{
+    font-size: 1.2rem;
+    padding-bottom: 0.5rem;
 }
