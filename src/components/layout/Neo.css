@@ -1,0 +1,92 @@
+.Neo{
+    position: relative;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.neo-cont{
+    padding: 3em 0;
+    position: relative;
+    
+}
+
+.neo-cards{
+    z-index: 2;
+    position: relative;
+}
+
+ .neo-cards::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2%;
+    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 30%, rgba(0,0,0,0) 100%);
+    z-index: 2;
+}
+
+.neo-cards::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2%;
+    height: 100%;
+    background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 70%);
+    z-index: 2;
+}
+ .neo-cards .neo-card .button-cont{
+    text-align: right;
+}
+ .neo-cards .neo-card .button-cont button{
+    border: none;
+    outline: none;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
+    background-color: #535353;
+    color: #ffffff;
+    text-align: right;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+ .neo-cards .neo-card .button-cont button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+#earth {
+    position: absolute;
+    top: -10%;
+    right: 0%;
+    width: 40vw;
+    height: 40vw;
+    max-width: 640px;
+    max-height: 640px;
+    background: url(/earthnight.jpg);
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    background-size: 300%;
+    box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(78, 43, 175, 0.3);
+    animation-name: rotate;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate;
+       -webkit-animation-duration: 36s;
+       -webkit-animation-iteration-count: infinite;
+       -webkit-animation-timing-function: linear;
+    z-index: 2;
+  }
+  @keyframes rotate {
+    from { background-position:  300%  0; }
+   to {   background-position:    0   0; }
+  }
+  @-webkit-keyframes rotate {
+    from { background-position:  300%  0; }
+   to {   background-position:    0   0; }
+  }

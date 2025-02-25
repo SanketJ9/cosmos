@@ -1,8 +1,7 @@
 import './App.css'
-import Banner from './components/Banner'
-import Header from './components/Header'
-import Neo from './components/Neo'
-import Text from './components/Text'
+import Banner from './components/layout/Banner'
+import Header from './components/layout/Header'
+import Neo from './components/layout/Neo'
 
 function App() {
 
@@ -12,7 +11,6 @@ function App() {
       <Header/>
       <Banner/>
       <Neo/>
-      <Text props="Sunilishere"/>
     </>
   )
 }
