@@ -5,6 +5,7 @@ import "./stars.css"
 
 import Slider from "react-slick";
 import Neocard from "./Neocard";
+import Button from "../ui/Button";
 
 const Neo = () => {
 
@@ -69,7 +70,7 @@ const Neo = () => {
                         <div className="description">
                           <p className="text-xl max-w-[720px]">Follow the journeys of celestial wanderers as they traverse the cosmos near our planet. Explore detailed data and insights into these fascinating objects.</p>
                         </div>
-                        
+                        <Button extraClass="mt-8" cta="Explore NEOs" align="left"/>
                     </div>
                 </div>
                 <div className="neo-cards z-10 py-12 px-4 mx-auto">
@@ -79,6 +80,7 @@ const Neo = () => {
                     ))}
                   </Slider>
                 </div>
+
                 <div className="stars-cont">
                   <div id='stars'></div>
                   <div id='stars2'></div>

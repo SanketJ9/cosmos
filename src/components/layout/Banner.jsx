@@ -55,7 +55,7 @@ const Banner = () => {
                       <div className="title pb-4">
                         <p className="text-4xl">{memoizedApod.title}</p>
                       </div>
-                      <div className="info">
+                      <div className="info max-h-[40vh]">
                         <p className="text-xl">{readmore? memoizedApod.explanation.substr(0, 200) : memoizedApod.explanation} <span onClick={toggleReadMore} className="cursor-pointer text-zinc-50">{readmore? "...More" : "Less"}</span></p>
                       </div>
                     </div>
