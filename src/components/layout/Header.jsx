@@ -2,11 +2,14 @@ import React from 'react'
 import "./Header.css"
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png"
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
+
+  const { pathname } = useLocation();
   return (
     <>
-        <div className="header">
+        <div className={"header " + (pathname === '/' ? "header-home" : "") }>
             <div className="container flex felx-row items-center gap-16">
                 <div className="logo"> 
                 <NavLink to="/" className={({ isActive }) => isActive ? "active" : ""}>

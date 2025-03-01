@@ -20,7 +20,7 @@
   #stars:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    left: 2000px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -39,7 +39,7 @@
   #stars2:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    left: 2000px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -58,7 +58,7 @@
   #stars3:after {
     content: " ";
     position: absolute;
-    top: 2000px;
+    left: 2000px;
     width: 3px;
     height: 3px;
     background: transparent;
@@ -69,10 +69,10 @@
   
   @keyframes animStar {
     from {
-      transform: translateY(0px);
+      transform: translateX(0px);
     }
     to {
-      transform: translateY(-2000px);
+      transform: translateX(-2000px);
     }
   }
   

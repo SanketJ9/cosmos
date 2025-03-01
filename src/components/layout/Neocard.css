@@ -1,0 +1,12 @@
+.neo-card{
+    position: relative;
+    overflow: hidden;
+}
+
+.aste-cont{
+    position: absolute;
+    width: 30%;
+    top: -8%;
+    right: -8%;
+    transform: rotate(-30deg);
+}

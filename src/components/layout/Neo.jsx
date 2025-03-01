@@ -1,8 +1,8 @@
 import axios from "axios"
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Neo.css"
 import "./stars.css"
-
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import Neocard from "./Neocard";
 import Button from "../ui/Button";
@@ -44,7 +44,7 @@ const Neo = () => {
     ]
     };
 
-    React.useEffect(() => {
+    useEffect(() => {
         setLoading(true);
         axios.get("https://api.nasa.gov/neo/rest/v1/neo/browse?api_key=vrKMI1bKEiQPIK9AXdGhbsqVLEbLAgU62bDfKqdq").then((response) => {
         setNeo(response.data);
@@ -70,7 +70,9 @@ const Neo = () => {
                         <div className="description">
                           <p className="text-xl max-w-[720px]">Follow the journeys of celestial wanderers as they traverse the cosmos near our planet. Explore detailed data and insights into these fascinating objects.</p>
                         </div>
-                        <Button extraClass="mt-8" cta="Explore NEOs" align="left"/>
+                        <Link to="/neos">
+                          <Button extraClass="mt-8" cta="Explore NEOs" align="left"/>
+                        </Link>
                     </div>
                 </div>
                 <div className="neo-cards z-10 py-12 px-4 mx-auto">
