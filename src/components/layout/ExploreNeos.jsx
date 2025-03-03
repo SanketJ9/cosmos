@@ -11,37 +11,7 @@ const ExploreNeos = () => {
     const [neo, setNeo] = useState()
     const [loading, setLoading] = useState(false);
 
-    var sliderSettings = {
-    dots: false,
-    infinite: true,
-    arrows: false,
-    speed: 2000,
-    draggable: true,
-    autoplay: true,
-    autoplayspeed: 1000,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    initialSlide: 0,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 4,
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 3,        }
-      },
-      {
-        breakpoint: 480,
-        settings: { 
-          slidesToShow: 2,
-        }
-      }
-    ]
-    };
+    // https://api.nasa.gov/neo/rest/v1/feed?start_date=2015-09-07&end_date=2015-09-08&api_key=vrKMI1bKEiQPIK9AXdGhbsqVLEbLAgU62bDfKqdq
 
     useEffect(() => {
         setLoading(true);
@@ -66,7 +36,7 @@ const ExploreNeos = () => {
                     {neo.near_earth_objects.map((neos) => (
                         <Neocard neo={neos} />
                     ))}
-                </div>
+                </div>    
              )}
         </div>
     </div>

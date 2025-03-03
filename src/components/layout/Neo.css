@@ -15,7 +15,7 @@
     position: relative;
 }
 
- .neo-cards::before{
+.neo-cards::before{
     content: '';
     position: absolute;
     top: 0;

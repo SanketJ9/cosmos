@@ -7,6 +7,7 @@ import './App.css'
 import AppLayout from './components/layout/AppLayout'
 import Home from './pages/Home'
 import Neos from './pages/Neos'
+import Mars from './pages/Mars'
 
 
 
@@ -24,6 +25,10 @@ function App() {
         {
           path:"/neos",
           element: <Neos/>
+        },
+        {
+          path:"/mars",
+          element: <Mars/>
         },
       ]
     }

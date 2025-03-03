@@ -10,7 +10,7 @@ const Neocard = (props) => {
         {/* {props.neos.near_earth_objects.map((neos,neoIndex) => ( */}
             <div className="neo-card p-6 rounded-xl border-zinc-800 m-1 border-2 bg-zinc-950 cursor-pointer" key={props.index}>
                 <div className="aste-cont">
-                    <Asteroid/>
+                    <Asteroid />
                 </div>
                 <div className="nickname pb-1">
                     <p className='text-3xl'>{props.neo.name_limited}</p>
