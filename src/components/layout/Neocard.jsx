@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Neo.css"
 import { FaArrowRight } from "react-icons/fa";
-import Asteroid from '../ui/asteroid';
+import Asteroid from '../ui/Asteroid';
 import './Neocard.css'
 
 const Neocard = (props) => {
