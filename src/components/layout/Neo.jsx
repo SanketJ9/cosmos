@@ -43,6 +43,7 @@ const Neo = () => {
       }
     ]
     };
+    
 
     useEffect(() => {
         setLoading(true);
